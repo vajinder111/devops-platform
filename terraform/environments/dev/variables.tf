@@ -21,3 +21,7 @@ variable "public_subnets" {
 variable "private_subnets" {
   type = list(string)
 }
+
+variable "allowed_ip" {
+  type = list(string)
+}

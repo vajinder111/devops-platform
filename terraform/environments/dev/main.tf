@@ -9,3 +9,11 @@ module "vpc" {
   public_subnets     = var.public_subnets
   private_subnets    = var.private_subnets
 }
+
+module "security_group" {
+  source = "../../modules/security-group"
+
+  vpc_id      = module.vpc.vpc_id
+  environment = var.environment
+  allowed_ip  = var.allowed_ip
+}

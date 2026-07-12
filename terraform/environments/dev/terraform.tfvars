@@ -18,3 +18,7 @@ private_subnets = [
   "10.0.101.0/24",
   "10.0.102.0/24"
 ]
+
+allowed_ip = [
+  "YOUR_PUBLIC_IP/32"
+]
