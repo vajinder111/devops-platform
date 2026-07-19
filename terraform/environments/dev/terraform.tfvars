@@ -22,3 +22,8 @@ private_subnets = [
 allowed_ip = [
   "YOUR_PUBLIC_IP/32"
 ]
+ami_id = "ami-xxxxxxxxxxxxxxxxx"
+
+instance_type = "t2.micro"
+
+key_name = "your-keypair-name"
